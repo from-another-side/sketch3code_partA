@@ -1,0 +1,32 @@
+/*
+Theme Name: Elitecorp
+Theme coder: Osama Elzero
+PSD Designer:
+
+
+*/
+.container{
+    border: 2px solid red;
+    padding-top: 10px;
+    padding-bottom: 270px;
+    text-align: center !important;
+    background-color: ivory;
+}
+.container h2{
+    color: red;
+    margin-top: 50px;
+    text-align: center !important;
+    border-bottom: 2px solid red;
+    border-width: 2px;
+   
+}
+.container button{
+    margin-top: 10px;
+    color: red;
+    text-align: center !important;
+    border-color: red;
+    margin-top:180px;   
+}
+.container button h3{
+    padding: 6px;
+}
