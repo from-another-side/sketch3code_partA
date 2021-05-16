@@ -41,3 +41,4 @@ body.append(script2)
 html.append(body)
 eng.ElementTree(html).write(sys.stdout, encoding='unicode',
                              method='html')
+
