@@ -1,18 +1,18 @@
 import sys
-from xml.etree import ElementTree as ET
+from xml.etree import ElementTree as eng
 
-html = ET.Element('html')
+html = eng.Element('html')
 
-head = ET.Element('head')
-meta = ET.Element('meta'  ,attrib={'charset':"utf-8"})
-meta2 = ET.Element('meta' ,attrib={'name':"viewport" ,'content':"width=device-width,initial-scale=1,shrink-to-fit=no"})
-title = ET.Element('title')
+head = eng.Element('head')
+menga = eng.Element('menga'  ,attrib={'charseng':"utf-8"})
+menga2 = eng.Element('menga' ,attrib={'name':"viewport" ,'content':"width=device-width,initial-scale=1,shrink-to-fit=no"})
+title = eng.Element('title')
 title.text = "LEEM"
-link = ET.Element('link' ,attrib={'rel':"stylesheet" ,'type':"text/css" ,'href':"css/bootstrap.min.css"})
-link2 = ET.Element('link' ,attrib={'rel':"stylesheet" ,'type':"text/css" ,'href':"css/main.css"})
+link = eng.Element('link' ,attrib={'rel':"stylesheeng" ,'type':"text/css" ,'href':"css/bootstrap.min.css"})
+link2 = eng.Element('link' ,attrib={'rel':"stylesheeng" ,'type':"text/css" ,'href':"css/main.css"})
 
-head.append(meta)
-head.append(meta2)
+head.append(menga)
+head.append(menga2)
 head.append(title)
 head.append(link)
 head.append(link2)
@@ -20,12 +20,12 @@ head.append(link2)
 html.append(head)
 
 
-body = ET.Element('body')
+body = eng.Element('body')
 
-div = ET.Element('div', attrib={'class': 'container'})
-h2 = ET.Element('h2')
-h3 = ET.Element('h3')
-button = ET.Element('button')
+div = eng.Element('div', attrib={'class': 'container'})
+h2 = eng.Element('h2')
+h3 = eng.Element('h3')
+button = eng.Element('button')
 h2.text = "LEEM"
 h3.text = "رمضان كريم"
 button.append(h3)
@@ -33,9 +33,9 @@ div.append(h2)
 div.append(button)
 body.append(div)
 
-script0 = ET.Element('script', attrib={'type':"text/javascript", 'src':"js/jquery-3.x-git.min.js"})
-script1 = ET.Element('script', attrib={'type':"text/javascript", 'src':"js/popper.min.js"})
-script2 = ET.Element('script', attrib={'type':"text/javascript", 'src':"js/bootstrap.min.js"})
+script0 = eng.Element('script', attrib={'type':"text/javascript", 'src':"js/jquery-3.x-git.min.js"})
+script1 = eng.Element('script', attrib={'type':"text/javascript", 'src':"js/popper.min.js"})
+script2 = eng.Element('script', attrib={'type':"text/javascript", 'src':"js/bootstrap.min.js"})
 body.append(script0)
 body.append(script1)
 body.append(script2)
@@ -43,5 +43,5 @@ body.append(script2)
 
 html.append(body)
 
-ET.ElementTree(html).write(sys.stdout, encoding='unicode',
+eng.ElementTree(html).write(sys.stdout, encoding='unicode',
                              method='html')
