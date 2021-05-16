@@ -18,13 +18,11 @@ head.append(link)
 head.append(link2)
 
 html.append(head)
-
-
 body = eng.Element('body')
 
 div = eng.Element('div', attrib={'class': 'container'})
-h2 = eng.Element('h2')
-h3 = eng.Element('h3')
+h2  = eng.Element('h2')
+h3  = eng.Element('h3')
 button = eng.Element('button')
 h2.text = "LEEM"
 h3.text = "رمضان كريم"
@@ -40,8 +38,6 @@ body.append(script0)
 body.append(script1)
 body.append(script2)
 
-
 html.append(body)
-
 eng.ElementTree(html).write(sys.stdout, encoding='unicode',
                              method='html')
