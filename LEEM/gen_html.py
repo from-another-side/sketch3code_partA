@@ -1,5 +1,5 @@
 import sys
-from xml.etree import ElementTree as eng
+from generator import eng
 
 html = eng.Element('html')
 
